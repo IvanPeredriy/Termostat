@@ -1,0 +1,66 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+kod                                                                               0x0160      20
+par                                                                               0x0174       2
+buffer                                                                            0x0176       2
+minus                                                                             0x0178       2
+buzzer                                                                            0x017A       2
+adc                                                                               0x017C       2
+filterin                                                                          0x017E       2
+wait_timer2                                                                       0x0180       2
+currtemp                                                                          0x0182       2
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+P4                                                                                0x0000       1
+P1                                                                                0x0001       2
+P2                                                                                0x0003       2
+P0                                                                                0x0005       1
+P3                                                                                0x0006       1
+P5                                                                                0x0007       1
+P6                                                                                0x0008       1
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+t1                                                                                R7           1
+t2                                                                                R6           1
+t3                                                                                R9           1
+i                                                                                 R8           1
+wait_timer1                                                                       R11          1
+wait_timer_for_termostat                                                          R10          1
+counter_buzzer                                                                    R13          1
+screen                                                                            R12          1
+knopka_left                                                                       R2.0      1bit
+knopka_right                                                                      R2.1      1bit
+knopka_middle                                                                     R2.2      1bit
+avariya_datchik_ne_podkluchen                                                     R2.3      1bit
+show_temp                                                                         R2.4      1bit
+show_termostat                                                                    R2.5      1bit
+show_ustavku                                                                      R2.6      1bit
+par_ust                                                                           R2.7      1bit
+P00                                                                               R3.0      1bit
+P01                                                                               R3.1      1bit
+P02                                                                               R3.2      1bit
+P03                                                                               R3.3      1bit
+P04                                                                               R3.4      1bit
+P05                                                                               R3.5      1bit
+P06                                                                               R3.6      1bit
+exit                                                                              R3.7      1bit
+show_par                                                                          R4.0      1bit
+flag_enter                                                                        R4.1      1bit
+OVERHEAT                                                                          R4.2      1bit
+flag_minus                                                                        R4.3      1bit
+flag_pereklu4                                                                     R4.4      1bit
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+read_adc                                                                          0x00110     15
+readtemp                                                                          0x0011F    886
+timer0_ovf_isr                                                                    0x00495    123
+timer1_ovf_isr                                                                    0x00510    233
+timer2_ovf_isr                                                                    0x005F9    691
+main                                                                              0x008AC     51
